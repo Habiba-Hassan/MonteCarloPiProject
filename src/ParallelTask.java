@@ -1,6 +1,3 @@
-// If your files inside src/ use a package declaration, place it at the very top, e.g.:
-// package montecarlo;
-
 import java.util.concurrent.Callable;
 import java.util.concurrent.ThreadLocalRandom;
 
