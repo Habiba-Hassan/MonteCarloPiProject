@@ -32,8 +32,8 @@ public class SimulationConfig {
             throw new IndexOutOfBoundsException("taskIndex out of range: " + taskIndex);
         }
         long base = totalPoints / numTasks;
-        long extra = totalPoints % numTasks;
-        return base + (taskIndex < extra ? 1 : 0);
+        long remainder = totalPoints % numTasks;
+        return base + (taskIndex < remainder ? 1 : 0);
     }
 
     @Override
